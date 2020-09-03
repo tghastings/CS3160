@@ -1,4 +1,4 @@
-This repository contains Dockerfile of Cloud9 IDE running on Alpine Linux for Docker's automated build published to the public Docker Hub Registry.
+This repository contains Dockerfile of the Code IDE running on Ubuntu Linux for Docker's automated build published to the public Docker Hub Registry.
 
 # Step 1: Docker Installation
 
