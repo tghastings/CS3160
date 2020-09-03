@@ -42,7 +42,7 @@ This repository contains Dockerfile of Cloud9 IDE running on Alpine Linux for Do
 
 Download automated build from public Docker Hub Registry:
 
-    docker pull tghastings/allthelangs
+    docker pull tghastings/cs3160
 
 # Step 3: Running
 
