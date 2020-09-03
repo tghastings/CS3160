@@ -1,16 +1,16 @@
-  
 FROM ubuntu:20.04
 
-# Install first order dependencies
+COPY mnxn.jvm-bytecode-viewer-0.3.0.vsix /root/mnxn.jvm-bytecode-viewer-0.3.0.vsix
+
+# Run apt update first
 RUN \
-  apt update && \
-  apt install -y \
-  curl default-jre 
+  apt-get update && apt install -y \
+  curl default-jre
 
 # Install second order dependencies
 RUN \ 
-  apt install -y \
-  default-jdk
+  apt-get install -y \
+  default-jdk haskell-platform 
 
 # Install vscode
 RUN \
