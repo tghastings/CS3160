@@ -32,10 +32,7 @@ RUN \
 RUN \
   curl -fsSL https://code-server.dev/install.sh | sh
 
-RUN \ 
-    mkdir -p /root/.local/share/code-server/extensions/mnxn.jvm-bytecode-viewer-0.3.0
-
-COPY vscode-jvm-bytecode-viewer /root/.local/share/code-server/extensions/mnxn.jvm-bytecode-viewer-0.3.0
+COPY *.vsix /root
 
 CMD /usr/bin/code-server --auth none --port 80 --host 0.0.0.0
 
