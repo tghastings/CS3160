@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
+ENV SHELL /bin/bash
 
 # Run apt update first
 RUN \
@@ -8,7 +9,7 @@ RUN \
 # Install second order dependencies
 RUN \ 
   apt install -y \
-  default-jdk haskell-platform git vim g++ gcc python rustc golang perl nodejs emacs sbcl  
+  default-jdk haskell-platform git vim g++ gcc python rustc golang perl nodejs emacs sbcl gfortran-9 
 
 # lisp
 RUN \
@@ -32,7 +33,7 @@ RUN \
 RUN \
   curl -fsSL https://code-server.dev/install.sh | sh
 
-COPY *.vsix /root
+#COPY *.vsix /root/
 
 CMD /usr/bin/code-server --auth none --port 80 --host 0.0.0.0
 
