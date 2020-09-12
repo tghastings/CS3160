@@ -9,7 +9,7 @@ RUN \
 # Install second order dependencies
 RUN \ 
   apt install -y \
-  default-jdk haskell-platform git vim g++ gcc python rustc golang perl nodejs emacs sbcl gfortran-9 
+  default-jdk haskell-platform git vim g++ gcc python rustc golang perl nodejs emacs sbcl gfortran-9 build-essential
 
 # lisp
 RUN \
